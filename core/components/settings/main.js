@@ -43,6 +43,26 @@ angular.module('mm.core.settings', [])
         }
     })
 
+    .state('site.mm_settings-about1', {
+        url: '/mm_settings-about1',
+        views: {
+            'site': {
+                templateUrl: 'core/components/settings/templates/about1.html',
+                controller: 'mmSettingsAbout1Ctrl'
+            }
+        }
+    })
+
+    .state('site.mm_settings-about2', {
+        url: '/mm_settings-about2',
+        views: {
+            'site': {
+                templateUrl: 'core/components/settings/templates/about2.html',
+                controller: 'mmSettingsAbout2Ctrl'
+            }
+        }
+    })
+
     .state('site.mm_settings-general', {
         url: '/mm_settings-general',
         views: {
